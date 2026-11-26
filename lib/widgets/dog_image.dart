@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/dog.dart';
 import '../theme/app_colors.dart';
 
@@ -23,7 +24,7 @@ class DogImage extends StatelessWidget {
       width: width,
       height: height,
       fit: BoxFit.cover,
-      errorBuilder: (_, __, ___) => Container(
+      errorBuilder: (_, _, _) => Container(
         width: width,
         height: height,
         color: dog.color,

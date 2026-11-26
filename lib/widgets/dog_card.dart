@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/dog.dart';
 import '../theme/app_colors.dart';
 import 'dog_image.dart';
@@ -56,7 +57,9 @@ class DogCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
-                            fontSize: 13, color: Colors.black54),
+                          fontSize: 13,
+                          color: Colors.black54,
+                        ),
                       ),
                       const SizedBox(height: 8),
                       Wrap(
@@ -98,11 +101,14 @@ class _Tag extends StatelessWidget {
         color: AppColors.background,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Text(text,
-          style: const TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w600,
-              color: AppColors.navy)),
+      child: Text(
+        text,
+        style: const TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w600,
+          color: AppColors.navy,
+        ),
+      ),
     );
   }
 }

@@ -66,5 +66,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>PawTime uses the camera to take a photo of your walk with a shelter dog.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>PawTime needs access to your photos so you can attach a picture from your walk.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>PawTime uses your location to geotag walk photos and check that you stay near the shelter.</string>
 </dict>
 </plist>

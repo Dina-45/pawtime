@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+
 import '../widgets/paw_bottom_nav.dart';
+import 'favorites_screen.dart';
 import 'home_screen.dart';
+import 'my_walks_screen.dart';
 import 'profile_screen.dart';
 
+// Favorites and bookings now live in BLoCs, so MainScreen only switches tabs.
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -13,9 +17,10 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _index = 0;
 
-  final List<Widget> _pages = const [
+  static const _pages = [
     HomeScreen(),
-    Center(child: Text('My Walks: coming in the next milestone 🐕')),
+    MyWalksScreen(),
+    FavoritesScreen(),
     ProfileScreen(),
   ];
 

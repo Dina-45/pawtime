@@ -1,5 +1,5 @@
 name: pawtime
-description: "A new Flutter project."
+description: "PawTime - walk shelter dogs without adopting."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,6 +34,15 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  # LW12: state management (BLoC / Cubit)
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.7
+  # REST API (Rewards shop)
+  http: ^1.2.2
+  # LW13: camera, gallery, GPS, runtime permissions
+  image_picker: ^1.1.2
+  geolocator: ^14.0.2
+  permission_handler: ^12.0.1
 
 dev_dependencies:
   flutter_test:
